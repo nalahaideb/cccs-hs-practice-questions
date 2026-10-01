@@ -1,6 +1,6 @@
 \newsection{Advanced}
 
-\underline{\EMPHASIZE{Questions are continued on the next page}}
+\underline{\textlg{\textbf{Questions are continued on the next page}}}
 \newpage
 \begin{enumerate}
 %======================================================
@@ -10,18 +10,24 @@
 
 %EXAMPLES HERE
 \begin{console}
-Example: array = [1,2,3,4,5,6,7], k = 3
+Example 1: [1,2,3,4,5,6,7], k = 3
+Output:    [5,6,7,1,2,3,4]
+
+Explanation:
 rotate 1 steps to the right: [7,1,2,3,4,5,6] 
 rotate 2 steps to the right: [6,7,1,2,3,4,5] 
 rotate 3 steps to the right: [5,6,7,1,2,3,4]
-Finished array: [5,6,7,1,2,3,4]
 
-Example: array = [-1,-100,3,99], k = 2
+Example 2: [-1,-100,3,99], k = 2
+Output:    [3,99,-1,-100]
+
+Explanation:
 rotate 1 steps to the right: [99,-1,-100,3]
 rotate 2 steps to the right: [3,99,-1,-100]
-Finished array: [3,99,-1,-100]
 
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{Given a signed 32-bit integer x, return x with its digits reversed.}}
@@ -33,15 +39,17 @@ If reversing x causes the value to go outside the signed 32-bit integer range [$
 
 %EXAMPLES HERE
 \begin{console}
-Example 1: x = 123 
-Output: 321 
+Example 1: 123 
+Output:    321 
 
-Example 2: x = -123 
-Output: -321 
+Example 2: -123 
+Output:    -321 
 
-Example 3: x = 120 
-Output: 21
-\end{console}\newpage
+Example 3: 120 
+Output:    21
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2, also represented as a string.}}
@@ -52,25 +60,29 @@ Note: You must not use any built-in BigInteger library or convert the inputs to 
 %EXAMPLES HERE
 \begin{console}
 Example 1: num1 = "2", num2 = "3" 
-Output: "6" 
+Output:    "6" 
 
 Example 2: num1 = "123", num2 = "456"
-Output: "56088"
-\end{console}\newpage
+Output:    "56088"
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{Given a string of words, reverse their order of appearance.}}
 
 %QUESTION SPECIFICS/IMAGES HERE
-
+Remove all leading / trailing whitespace
 %EXAMPLES HERE
 \begin{console}
 Example: "the sky is blue" 
 Output:  "blue is sky the"
 
 Example: "  hello world  " 
-Output:  "world hello" (remove all leading / trailing whitespace)
-\end{console}\newpage
+Output:  "world hello" 
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{Given a list of numbers, determine exactly how many numbers are strictly smaller than the current number for every single element in the list.}}
@@ -82,7 +94,9 @@ Count all the strictly smaller values across the entire list and return these co
 \begin{console}
 Example 1: [8,1,2,2,3] 
 Output:    [4,0,1,1,3]
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{Imagine a black-and-white image represented as a 2D grid of 0s and 1s. You need to apply two transformations to this grid in order.}}
@@ -94,7 +108,9 @@ First, flip the image horizontally, meaning the elements of each row are reverse
 \begin{console}
 Example 1: [[1,1,0],[1,0,1],[0,0,0]] 
 Output:    [[1,0,0],[0,1,0],[1,1,1]]
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{You are given a main text string and a target substring. You need to continuously search for the leftmost appearance of the target substring within the main text and delete it.}}
@@ -106,7 +122,9 @@ After deleting a substring, the remaining pieces of the main text will slide tog
 \begin{console}
 Example 1: "daabcbaabcbc", target = "abc" 
 Output:    "dab"
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{You are given a list of words. Filter this list and return only the words that can be typed using just a single row of a standard English QWERTY keyboard.}}
@@ -120,7 +138,9 @@ For reference, the top row is "qwertyuiop", the middle row is "asdfghjkl", and t
 \begin{console}
 Example 1: ["Hello","Alaska","Dad","Peace"]
 Output:    ["Alaska","Dad"]
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 
 %======================================================
@@ -133,7 +153,9 @@ If it is already divisible, you remove nothing. If it is impossible to achieve t
 \begin{console}
 Example 1: [3,1,4,2], divisor = 6 
 Output:    [1]
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 
 %======================================================
@@ -146,7 +168,9 @@ Roman numerals are represented by seven different symbols: I (1), V (5), X (10),
 \begin{console}
 Example 1: 58 
 Output:    "LVIII"
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.}}
@@ -158,7 +182,9 @@ Note that you must do this in-place without making a copy of the array.
 \begin{console}
 Example 1: [0,1,0,3,12]
 Output:    [1,3,12,0,0]
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{You are given a string that contains regular letters and star symbols ('*').}}
@@ -173,6 +199,149 @@ Output:    "hello rld"
 
 Example 2: "what*s up"
 Output:    "whas up"
-\end{console}\newpage 
+\end{console}
+\newpage
+ 
+
+\end{enumerate}
+
+\newpage
+For this section, you should know your data structures and algorithms. If you don't, feel free to look anyways, but keep in mind these questions are very challenging even to those who do know their DSA.\\\\
+
+
+\underline{\EMPHASIZE{Questions are continued on the next page}}
+\newpage
+\begin{enumerate}
+%======================================================
+\item \textlg{\textbf{Verify that a given number is valid}}
+
+%QUESTION SPECIFICS/IMAGES HERE
+Given a string s, return whether s is a valid number.
+
+For example, all the following are valid numbers: ``2'', ``0089'', ``-0.1'', ``+3.14'', ``4.'', ``-.9'', ``2e10'', ``-90E3'', ``3e+7'', ``+6e-1'', ``53.5e93'', ``-123.456e789'', while the following are \textbf{\textlg{not}} valid numbers: ``abc'', ``1a'', ``1e'', ``e3'', ``99e2.5'', ``--6'', ``-+3'', ``95a54e53''.
+
+Formally, a valid number is defined using one of the following definitions:
+\begin{itemize}
+\item An integer number followed by an optional exponent.
+\item A decimal number followed by an optional exponent.
+\item An integer number is defined with an optional sign '-' or '+' followed by digits.
+\end{itemize}
+
+A decimal number is defined with an optional sign '-' or '+' followed by one of the following definitions:
+\begin{itemize}
+\item Digits followed by a dot '.'.
+\item Digits followed by a dot '.' followed by digits.
+\item A dot '.' followed by digits.
+\item An exponent is defined with an exponent notation 'e' or 'E' followed by an integer number.
+\end{itemize}
+The digits are defined as one or more digits.
+%EXAMPLES HERE
+\begin{console}
+Example 1: "0"
+Output:    true
+
+Example 2: "e"
+Output:    false
+
+Example 3: "."
+Output:    false
+\end{console}
+\newpage
+
+
+%======================================================
+\item \textlg{\textbf{First missing positive number}}
+
+%QUESTION SPECIFICS/IMAGES HERE
+Given an unsorted integer array, return the smallest positive integer that is not present.
+
+You must implement an algorithm that runs in O(n) time and uses O(1) auxiliary space.
+
+%EXAMPLES HERE
+\begin{console}
+Example 1: [1,2,0]
+Output:    3
+Explanation: The numbers in the range [1,2] are all in the array.
+
+Example 2: [3,4,-1,1]
+Output:    2
+Explanation: 1 is in the array but 2 is missing.
+
+Example 3: [7,8,9,11,12]
+Output:    1
+Explanation: The smallest positive integer 1 is missing.
+\end{console}
+\newpage
+
+
+%======================================================
+\item \textlg{\textbf{Correct change}}
+
+%QUESTION SPECIFICS/IMAGES HERE
+You are given an integer array representing coins of different denominations and an integer amount representing a total amount of money.
+
+Return the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
+
+You may assume that you have an infinite number of each kind of coin.
+%EXAMPLES HERE
+\begin{console}
+Example 1: [1,2,5], amount = 11
+Output:    3
+Explanation: 11 = 5 + 5 + 1
+
+Example 2: [2], amount = 3
+Output:    -1
+
+Example 3: [1], amount = 0
+Output:    0
+\end{console}
+\newpage
+
+
+%======================================================
+\item \textlg{\textbf{K$^{th}$ largest number}}
+
+%QUESTION SPECIFICS/IMAGES HERE
+Given an integer array and an integer $k$, return the $k^{th}$ largest element in the array.
+
+Note that it is the $k^{th}$ \underline{largest element in the sorted order}, not the $k^{th}$ distinct element.
+
+Can you solve it \textlg{without} sorting?
+
+%EXAMPLES HERE
+\begin{console}
+Example 1: [3,2,1,5,6,4], k = 2
+Output:    5
+
+Example 2: [3,2,3,1,2,4,5,5,6], k = 4
+Output:    4
+\end{console}
+\newpage
+
+
+%======================================================
+\item \textlg{\textbf{String splitting}}
+
+%QUESTION SPECIFICS/IMAGES HERE
+You are given a string s. We want to partition the string into as many parts as possible so that each letter appears in at most one part. For example, the string \texttt{"ababcc"} can be partitioned into \texttt{["abab", "cc"]}, but partitions such as \texttt{["aba", "bcc"]} or \texttt{["ab", "ab", "cc"]} are invalid.
+
+Note that the partition is done so that after concatenating all the parts in order, the resultant string should be s.
+
+Return a list of integers representing the size of these parts. 
+
+%EXAMPLES HERE
+\begin{console}
+Example 1: "ababcbacadefegdehijhklij"
+Output:    [9,7,8]
+Explanation:
+The partition is "ababcbaca", "defegde", "hijhklij".
+
+This is a partition so that each letter appears in at most one part.
+A partition like "ababcbacadefegde", "hijhklij" is incorrect, because it splits s into less parts.
+
+Example 2: "eccbbbbdec"
+Output:    [10]
+\end{console}
+\newpage
 
 \end{enumerate}

@@ -1,16 +1,24 @@
 %-*-latex-*-
-\textwidth=8in
-%% \renewcommand{\familydefault}{\sfdefault}
-\documentclass[a4paper]{letter}
+\input{myarticlepreamble.tex}
+\input{yliow}
+
+\renewcommand\AUTHOR{Yihsiang Liow}
+\renewcommand\EMAIL{cccs101010@gmail.com}
+
+\input{thistitle}
+
+\textwidth=5.5in % of 6in
+
 \input{thispackages}
 \input{thismacros}
+
+\makeindex
 \begin{document}
-\textsc{\textlg{Columbia College Computer Science}}\\\\\\
+
 \includegraphics[scale=0.15]{images/CCCS_Logo_Black.png}\\\\\\
 
-
-\textsc{\textlg{CCCS High school Programming Contest: Practice questions}}\\\\
-
+\textsc{\textlg{CCCS High school Programming Contest:}}\\
+\textsc{\textlg{Practice questions}}\\\\
 
 \href{https://yliow.github.io/programming-contest/}{CCCS High school programming contest website}\\\\
 

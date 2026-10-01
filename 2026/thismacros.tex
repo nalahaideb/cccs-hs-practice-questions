@@ -69,26 +69,26 @@
 
 % --- DEFINITION & CONCEPT BOXES ---
 % Replaces your \lemma command with a nice box
-\newtcolorbox{concept}[1]{
-  colback=blue!5!white,
-  colframe=blue!75!black,
-  title=\textbf{DEFINITION: #1},
-  sharp corners=south,
-  boxrule=0.5mm
-}
+%% \newtcolorbox{concept}[1]{
+%%   colback=blue!5!white,
+%%   colframe=blue!75!black,
+%%   title=\textbf{DEFINITION: #1},
+%%   sharp corners=south,
+%%   boxrule=0.5mm
+%% }
 
-\newtcolorbox{warning}{
-  colback=red!5!white,
-  colframe=red!75!black,
-  title=\textbf{WATCH OUT!},
-  boxrule=0.5mm
-}
+%% \newtcolorbox{warning}{
+%%   colback=red!5!white,
+%%   colframe=red!75!black,
+%%   title=\textbf{WATCH OUT!},
+%%   boxrule=0.5mm
+%% }
 
 % --- SIDENOTES ---
 % This fixes your TikZ issue. This flows with the text.
-\newcommand{\sidenote}[1]{%
-  \marginnote{\footnotesize \textit{\color{blue!70!black} $\rightarrow$ #1}}%
-}
+%% \newcommand{\sidenote}[1]{%
+%%   \marginnote{\footnotesize \textit{\color{blue!70!black} $\rightarrow$ #1}}%
+%% }
 
 % --- MATH & UTILS ---
 \newcommand{\vct}[1]{\overrightarrow{#1}}
@@ -136,12 +136,12 @@
 \newcommand{\textlg}[1]{\large {#1}\normalsize}
 \newcommand{\texthg}[1]{\huge {#1}\normalsize}
 \newcommand{\EMPHASIZE}[1]{{\huge \textbf{#1}}}
-\newcommand\redtext[1]{\textcolor{red}{#1}}
-\newcommand\textred[1]{\textcolor{red}{#1}}
-\newcommand\bluetext[1]{\textcolor{blue}{#1}}
-\newcommand\textblue[1]{\textcolor{blue}{#1}}
-\newcommand\whitetext[1]{\textcolor{white}{#1}}
-\newcommand\textwhite[1]{\textcolor{white}{#1}}
+%\newcommand\redtext[1]{\textcolor{red}{#1}}
+%\newcommand\textred[1]{\textcolor{red}{#1}}
+%\newcommand\bluetext[1]{\textcolor{blue}{#1}}
+%\newcommand\textblue[1]{\textcolor{blue}{#1}}
+%\newcommand\whitetext[1]{\textcolor{white}{#1}}
+%\newcommand\textwhite[1]{\textcolor{white}{#1}}
 
 \newcounter{spoiler}
 \newenvironment{spoiler}[1]{%
@@ -163,102 +163,102 @@
 \newcommand{\exercise}[1]{\textbf{Exercise: \underline{#1 }\\\\ }\textsc{Answer:}\\\\}
 
 %% %verbatim env           
-\lstnewenvironment{console}[1][]
-{\lstset{
-    basicstyle=\ttfamily,
-    backgroundcolor=\color{white},
-    frame=single,
-    framesep=3pt,
-    rulecolor=\color{black},
-    showspaces=false,    
-    showtabs=false,      
-    keepspaces=true,     
-    numbers=none,
-    #1
-}}
-{}
+%% \lstnewenvironment{console}[1][]
+%% {\lstset{
+%%     basicstyle=\ttfamily,
+%%     backgroundcolor=\color{white},
+%%     frame=single,
+%%     framesep=3pt,
+%%     rulecolor=\color{black},
+%%     showspaces=false,    
+%%     showtabs=false,      
+%%     keepspaces=true,     
+%%     numbers=none,
+%%     #1
+%% }}
+%% {}
 
 %drawing commands (boxes, basic shapes, formatting etc)
 
-\newcommand\xsidebox[5][1=0cm, 2=0cm, 3=]{
-  % #1 x-shift          -- optional (default: 0cm)
-  % #2 y-shift          -- optional (default: 0cm)
-  % #3 node attributes  -- optional (default: empty)
-  % #4 node name
-  % #5 node text
-  \renewcommand*{\marginfont}{\normalsize}
-  \marginpar{\centering%
-      %\vspace{#1}\hspace{#2} 
-      \begin{tikzpicture}[overlay,remember picture, baseline=(#4.base)]
-        \node[rectangle,
-          draw=red,
-          text width=4cm, minimum width=2cm, line width=0.1cm, inner sep=0.2cm, name=#4, xshift=#1, yshift=#2, #3] (#4) 
-             {
-               \begin{minipage}[t]{4.0cm}
-                 {#5}
-               \end{minipage}
-             };
-        ([xshift=0.5]#4.center)[draw]
-      \end{tikzpicture}
-    \renewcommand*{\marginfont}{\tiny}
-}}
+%% \newcommand\xsidebox[5][1=0cm, 2=0cm, 3=]{
+%%   % #1 x-shift          -- optional (default: 0cm)
+%%   % #2 y-shift          -- optional (default: 0cm)
+%%   % #3 node attributes  -- optional (default: empty)
+%%   % #4 node name
+%%   % #5 node text
+%%   \renewcommand*{\marginfont}{\normalsize}
+%%   \marginpar{\centering%
+%%       %\vspace{#1}\hspace{#2} 
+%%       \begin{tikzpicture}[overlay,remember picture, baseline=(#4.base)]
+%%         \node[rectangle,
+%%           draw=red,
+%%           text width=4cm, minimum width=2cm, line width=0.1cm, inner sep=0.2cm, name=#4, xshift=#1, yshift=#2, #3] (#4) 
+%%              {
+%%                \begin{minipage}[t]{4.0cm}
+%%                  {#5}
+%%                \end{minipage}
+%%              };
+%%         ([xshift=0.5]#4.center)[draw]
+%%       \end{tikzpicture}
+%%     \renewcommand*{\marginfont}{\tiny}
+%% }}
 
-\newcommand*{\DrawArrow}[3][red]{%
-    % #1 = draw options
-    % #2 = left node
-    % #3 = right node
-  \begin{tikzpicture}[overlay,remember picture]
-    \draw [-latex, #1, line width=0.1cm] (#2) to (#3);
-  \end{tikzpicture}%
-}
-\newcommand*{\DrawArrowH}[3][red]{%
-    % #1 = draw options
-    % #2 = left node
-    % #3 = right node
-  \begin{tikzpicture}[overlay,remember picture]
-    \draw [-latex, #1, line width=0.1cm] (#2.west |- #3) -- (#3);
-  \end{tikzpicture}%
-}
-\newcommand*{\DrawArrowVH}[3][red]{%
-    % #1 = draw options
-    % #2 = left node
-    % #3 = right node
-  \begin{tikzpicture}[overlay,remember picture]
-    \draw [-latex, #1, line width=0.1cm] (#2) |- (#3.east);
-  \end{tikzpicture}%
-}
-\newcommand*{\DrawArrowHV}[3][red]{%
-  \begin{tikzpicture}[overlay,remember picture]
-    \draw [-latex, #1, line width=0.1cm] (#2.west) -| (#3);
-  \end{tikzpicture}%
-}
-\newcommand*{\DrawArrowPoints}[4][red]{%
-  \begin{tikzpicture}[overlay,remember picture]
-    \draw [-latex, #1, line width=0.1cm] (#2) #4 to (#3);
-  \end{tikzpicture}%
-}
+%% \newcommand*{\DrawArrow}[3][red]{%
+%%     % #1 = draw options
+%%     % #2 = left node
+%%     % #3 = right node
+%%   \begin{tikzpicture}[overlay,remember picture]
+%%     \draw [-latex, #1, line width=0.1cm] (#2) to (#3);
+%%   \end{tikzpicture}%
+%% }
+%% \newcommand*{\DrawArrowH}[3][red]{%
+%%     % #1 = draw options
+%%     % #2 = left node
+%%     % #3 = right node
+%%   \begin{tikzpicture}[overlay,remember picture]
+%%     \draw [-latex, #1, line width=0.1cm] (#2.west |- #3) -- (#3);
+%%   \end{tikzpicture}%
+%% }
+%% \newcommand*{\DrawArrowVH}[3][red]{%
+%%     % #1 = draw options
+%%     % #2 = left node
+%%     % #3 = right node
+%%   \begin{tikzpicture}[overlay,remember picture]
+%%     \draw [-latex, #1, line width=0.1cm] (#2) |- (#3.east);
+%%   \end{tikzpicture}%
+%% }
+%% \newcommand*{\DrawArrowHV}[3][red]{%
+%%   \begin{tikzpicture}[overlay,remember picture]
+%%     \draw [-latex, #1, line width=0.1cm] (#2.west) -| (#3);
+%%   \end{tikzpicture}%
+%% }
+%% \newcommand*{\DrawArrowPoints}[4][red]{%
+%%   \begin{tikzpicture}[overlay,remember picture]
+%%     \draw [-latex, #1, line width=0.1cm] (#2) #4 to (#3);
+%%   \end{tikzpicture}%
+%% }
 
 
-\lstnewenvironment{consolethree}[1][]
-{
-  \lstset{
-    escapeinside={~|}{|~},
-    basicstyle=\ttfamily,
-    breaklines=true,
-    columns=fullflexible,
-    keepspaces=true,
-    frame=single,
-    xleftmargin=3.4pt,
-    xrightmargin=3.4pt,
-    belowskip=0pt,
-    numbers=none,
-    #1
-  }
-}
-{}
+%% \lstnewenvironment{consolethree}[1][]
+%% {
+%%   \lstset{
+%%     escapeinside={~|}{|~},
+%%     basicstyle=\ttfamily,
+%%     breaklines=true,
+%%     columns=fullflexible,
+%%     keepspaces=true,
+%%     frame=single,
+%%     xleftmargin=3.4pt,
+%%     xrightmargin=3.4pt,
+%%     belowskip=0pt,
+%%     numbers=none,
+%%     #1
+%%   }
+%% }
+%% {}
 
-\newcommand\includesourcethree[2][]{\lstinputlisting[frame=single,basicstyle=\ttfamily\footnotesize,
-    breaklines=true,
-    columns=fullflexible,
-    keepspaces=true,xleftmargin=3.4pt,xrightmargin=3.4pt, #1]{#2}%
-    }
+%% \newcommand\includesourcethree[2][]{\lstinputlisting[frame=single,basicstyle=\ttfamily\footnotesize,
+%%     breaklines=true,
+%%     columns=fullflexible,
+%%     keepspaces=true,xleftmargin=3.4pt,xrightmargin=3.4pt, #1]{#2}%
+%%     }

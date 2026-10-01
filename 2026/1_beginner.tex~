@@ -15,7 +15,8 @@ Output: 00:00:15
 
 Example 2: 095045 110510
 Output: 01:14:25
-\end{console}\newpage
+\end{console}
+\newpage
 
 %======================================================
 \item \textbf{Print the calendar}
@@ -35,7 +36,9 @@ Su  Mo  Tu  We  Th Fr Sa
 16  17  18  19  20 21 22
 23  24  25  26  27 28 29
 30  31
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textbf{Check a Map Position}
@@ -61,7 +64,9 @@ Output: 1
 Example 2: r = 1, c = 4
 Output: 0
 
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textbf{Print a V}
@@ -85,7 +90,9 @@ Output:
 *     *
  *   *
    *
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textbf{Magic Squares}
@@ -107,7 +114,9 @@ Example 2:
 4 9 2
 3 5 7
 8 1 6
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textbf{Prime Search and Factorization}
@@ -132,7 +141,9 @@ Output:    Not prime
 
 Example 3: x = 60, option = 1
 Output:    2 * 2 * 3 * 5
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 
 %======================================================
@@ -142,7 +153,7 @@ Output:    2 * 2 * 3 * 5
 Given a positive integer n, print all positive integers x, y, and z where x³ + y³ = z and z is at most n. Print each solution as x y z, ordered by z and then x. Include reversed pairs.
 
 %EXAMPLES HERE
-\begin{console}[escapeinside=||]
+\begin{console}
 Example 1: 16
 Output:
 1 1 2
@@ -151,7 +162,9 @@ Output:
 2 2 16
 
 Explanation: 1 2 9 means |\texttt{$1^3$ + $2^3$}| = 9.
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 
 %======================================================
@@ -167,7 +180,9 @@ Output:    1/2
 
 Example 2: 3 4 5 4
 Output:    2
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 
 %======================================================
@@ -185,7 +200,9 @@ Explanation: 3 + 8 = 11, then 1 + 1 = 2.
 
 Example 2: 0
 Output:    0
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 
 %======================================================
@@ -201,7 +218,9 @@ Output:    [1, 2, 4]
 
 Example 2: [9, 9]
 Output:    [1, 0, 0]
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 
 %======================================================
@@ -220,7 +239,9 @@ Example 1: nums1 = [1, 2, 3, 0, 0, 0],
 Output:    nums1 = [1, 2, 2, 3, 5, 6]
 
 The placeholder zeros are ignored. Keep duplicate values.
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 
 %======================================================
@@ -239,7 +260,9 @@ Output:    1
 
 Example 3: [1, 3, 5, 6], target = 7
 Output:    4
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 
 %======================================================
@@ -258,7 +281,9 @@ Explanation:
 Row 0: PAHN
 Row 1: APLSIIG
 Row 2: YIR
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 
 %======================================================
@@ -277,7 +302,9 @@ Explanation: 6 = 2 * 3.
 Example 2: 14
 Output:    false
 Explanation: 14 has a prime factor of 7.
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 
 %======================================================
@@ -293,7 +320,9 @@ Output:    [0, 1]
 
 Example 2: [3, 3], target = 6
 Output:    [0, 1]
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 
 %======================================================
@@ -311,7 +340,9 @@ Example 2: 8
 Output:    2
 
 Explanation: 2 * 2 is at most 8, but 3 * 3 is greater than 8.
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 
 %======================================================
@@ -327,7 +358,9 @@ Output:    "fl"
 
 Example 2: ["dog", "racecar", "car"]
 Output:    ""
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 
 %======================================================
@@ -346,5 +379,7 @@ Keep the digits in the same positions. Count a number only if all digits are val
 Example 1: 10
 Output:    4
 Explanation: The qualifying numbers are 2, 5, 6, and 9.
-\end{console}\newpage
+\end{console}
+\newpage
+
 \end{enumerate}

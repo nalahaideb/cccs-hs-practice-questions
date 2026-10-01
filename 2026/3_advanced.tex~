@@ -25,7 +25,9 @@ Explanation:
 rotate 1 steps to the right: [99,-1,-100,3]
 rotate 2 steps to the right: [3,99,-1,-100]
 
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{Given a signed 32-bit integer x, return x with its digits reversed.}}
@@ -45,7 +47,9 @@ Output:    -321
 
 Example 3: 120 
 Output:    21
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2, also represented as a string.}}
@@ -60,7 +64,9 @@ Output:    "6"
 
 Example 2: num1 = "123", num2 = "456"
 Output:    "56088"
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{Given a string of words, reverse their order of appearance.}}
@@ -74,7 +80,9 @@ Output:  "blue is sky the"
 
 Example: "  hello world  " 
 Output:  "world hello" 
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{Given a list of numbers, determine exactly how many numbers are strictly smaller than the current number for every single element in the list.}}
@@ -86,7 +94,9 @@ Count all the strictly smaller values across the entire list and return these co
 \begin{console}
 Example 1: [8,1,2,2,3] 
 Output:    [4,0,1,1,3]
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{Imagine a black-and-white image represented as a 2D grid of 0s and 1s. You need to apply two transformations to this grid in order.}}
@@ -98,7 +108,9 @@ First, flip the image horizontally, meaning the elements of each row are reverse
 \begin{console}
 Example 1: [[1,1,0],[1,0,1],[0,0,0]] 
 Output:    [[1,0,0],[0,1,0],[1,1,1]]
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{You are given a main text string and a target substring. You need to continuously search for the leftmost appearance of the target substring within the main text and delete it.}}
@@ -110,7 +122,9 @@ After deleting a substring, the remaining pieces of the main text will slide tog
 \begin{console}
 Example 1: "daabcbaabcbc", target = "abc" 
 Output:    "dab"
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{You are given a list of words. Filter this list and return only the words that can be typed using just a single row of a standard English QWERTY keyboard.}}
@@ -124,7 +138,9 @@ For reference, the top row is "qwertyuiop", the middle row is "asdfghjkl", and t
 \begin{console}
 Example 1: ["Hello","Alaska","Dad","Peace"]
 Output:    ["Alaska","Dad"]
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 
 %======================================================
@@ -137,7 +153,9 @@ If it is already divisible, you remove nothing. If it is impossible to achieve t
 \begin{console}
 Example 1: [3,1,4,2], divisor = 6 
 Output:    [1]
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 
 %======================================================
@@ -150,7 +168,9 @@ Roman numerals are represented by seven different symbols: I (1), V (5), X (10),
 \begin{console}
 Example 1: 58 
 Output:    "LVIII"
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.}}
@@ -162,7 +182,9 @@ Note that you must do this in-place without making a copy of the array.
 \begin{console}
 Example 1: [0,1,0,3,12]
 Output:    [1,3,12,0,0]
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{You are given a string that contains regular letters and star symbols ('*').}}
@@ -177,7 +199,9 @@ Output:    "hello rld"
 
 Example 2: "what*s up"
 Output:    "whas up"
-\end{console}\newpage 
+\end{console}
+\newpage
+ 
 
 \end{enumerate}
 
@@ -221,7 +245,9 @@ Output:    false
 
 Example 3: "."
 Output:    false
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{First missing positive number}}
@@ -244,7 +270,9 @@ Explanation: 1 is in the array but 2 is missing.
 Example 3: [7,8,9,11,12]
 Output:    1
 Explanation: The smallest positive integer 1 is missing.
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{Correct change}}
@@ -266,7 +294,9 @@ Output:    -1
 
 Example 3: [1], amount = 0
 Output:    0
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{K$^{th}$ largest number}}
@@ -285,7 +315,9 @@ Output:    5
 
 Example 2: [3,2,3,1,2,4,5,5,6], k = 4
 Output:    4
-\end{console}\newpage
+\end{console}
+\newpage
+
 
 %======================================================
 \item \textlg{\textbf{String splitting}}
@@ -309,5 +341,7 @@ A partition like "ababcbacadefegde", "hijhklij" is incorrect, because it splits 
 
 Example 2: "eccbbbbdec"
 Output:    [10]
-\end{console}\newpage
+\end{console}
+\newpage
+
 \end{enumerate}
