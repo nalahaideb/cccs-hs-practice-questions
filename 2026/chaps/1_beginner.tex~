@@ -1,0 +1,283 @@
+\newsection{Beginner}
+
+\underline{\EMPHASIZE{Questions are continued on the next page}}
+%======================================================
+\newpage\underline{\textbf{Print the difference of two times, given as 6-digit integers}}
+
+%QUESTION SPECIFICS/IMAGES HERE
+
+%EXAMPLES HERE
+\begin{console}
+  Example 1: 091400 091415
+  Output: 00:00:15
+
+  Example 1: 091400 091500
+  Output: 00:01:00
+\end{console}
+
+%======================================================
+\newpage\underline{\textbf{Time Difference}}
+
+%QUESTION SPECIFICS/IMAGES HERE
+Given two times in HHMMSS format, print the time between them as HH:MM:SS. Assume both times are on the same day and the second is not earlier than the first.
+%EXAMPLES HERE
+\begin{console}
+Example 1: 091400 091415
+Output: 00:00:15
+
+Example 2: 095045 110510
+Output: 01:14:25
+\end{console}
+
+%======================================================
+\newpage\underline{\textbf{Print the calendar}}
+
+%QUESTION SPECIFICS/IMAGES HERE
+Given a month, year, and weekday of the first day, print that month's calendar. Weekdays are numbered 0 (Sunday) through 6 (Saturday). Account for leap years.
+%EXAMPLES HERE
+\begin{console}
+Example 1: month = 3, year = 2008, firstWeekday = 6
+
+Output:
+March 2008
+Su  Mo  Tu  We  Th Fr Sa
+                       1
+ 2   3   4   5   6  7  8
+ 9  10  11  12  13 14 15
+16  17  18  19  20 21 22
+23  24  25  26  27 28 29
+30  31
+\end{console}
+
+%======================================================
+\newpage\underline{\textbf{Check a Map Position}}
+
+%QUESTION SPECIFICS/IMAGES HERE
+Given a row r and column c, print 1 if the position is open and 0 if it is blocked or outside the map.
+Rows are numbered 0–7 and columns 0–9. The blocked areas are:
+Rows 1–2, columns 2–8.
+Rows 5–6, columns 4–7.
+
+%EXAMPLES HERE
+\begin{console}
+Example 1: r = 0, c = 0
+Output: 1
+
+Example 2: r = 1, c = 4
+Output: 0
+
+\end{console}
+
+%======================================================
+\newpage\underline{\textbf{Print a V}}
+
+%QUESTION SPECIFICS/IMAGES HERE
+Given a positive integer n, print a V made of stars with n rows. Start with 2n - 3 spaces between the top stars, then move each side inward by one space per row. The final row contains one star.
+
+%EXAMPLES HERE
+\begin{console}
+Input: 4
+Output:
+*     *
+ *   *
+   *
+Input: 1
+Output:
+*
+\end{console}
+
+%======================================================
+\newpage\underline{\textbf{Magic Squares}}
+
+%QUESTION SPECIFICS/IMAGES HERE
+Print all 3-by-3 arrangements of the digits 1–9 where every row, column, and both diagonals add to 15. Use each digit exactly once. There is no input.
+
+Your program should find all 8 arrangements. Rotations and reflections count as different arrangements.
+%EXAMPLES HERE
+\begin{console}
+Example 1:
+2 7 6
+9 5 1
+4 3 8
+\end{console}
+
+%======================================================
+\newpage\underline{\textbf{Prime Search and Factorization}}
+
+%QUESTION SPECIFICS/IMAGES HERE
+Compute and store the first 100,000 primes in an array. Print the first 5 and last 5.
+
+Then repeatedly read a number x and an option:
+Option 0: Use binary search to check whether x is prime. If it is, print its array index, starting at 0.
+Option 1: Print x as a product of prime factors.
+Stop when x is -1.
+
+Assume x is at least 2 and any prime needed is in your array. For option 0, x will not exceed the largest stored prime.
+
+%EXAMPLES HERE
+\begin{console}
+Example 1: x = 13, option = 0
+Output: Prime, index 5
+
+Example 2: x = 12, option = 0
+Output: Not prime
+
+Example 3: x = 60, option = 1
+Output: 2 * 2 * 3 * 5
+
+\end{console}
+
+
+%======================================================
+\newpage\underline{\textbf{Sums of Two Cubes}}
+
+%QUESTION SPECIFICS/IMAGES HERE
+Given a positive integer n, print all positive integers x, y, and z where x³ + y³ = z and z is at most n. Print each solution as x y z, ordered by z and then x. Include reversed pairs.
+
+%EXAMPLES HERE
+\begin{console}[escapeinside=||]
+Example 1: 16
+Output:
+1 1 2
+1 2 9
+2 1 9
+2 2 16
+
+Explanation: 1 2 9 means |\texttt{$1^3$ + $2^3$}| = 9.
+\end{console}
+
+
+%======================================================
+\newpage\underline{\textbf{Add Fractions}}
+
+%QUESTION SPECIFICS/IMAGES HERE
+Given four integers a, b, c, and d, add a/b and c/d. Simplify the result. If it is a whole number, print it without a denominator. Assume denominators are positive.
+
+%EXAMPLES HERE
+\begin{console}
+Example 1: 1 6 1 3
+Output: 1/2
+
+Example 2: 3 4 5 4
+Output: 2
+\end{console}
+
+
+%======================================================
+\newpage\underline{\textbf{Add Digits
+}}
+%QUESTION SPECIFICS/IMAGES HERE
+Given a nonnegative integer, repeatedly add its digits until only one digit remains.
+
+
+%EXAMPLES HERE
+\begin{console}
+Example 1: 38
+Output: 2
+Explanation: 3 + 8 = 11, then 1 + 1 = 2.
+
+Example 2: 0
+Output: 0
+\end{console}
+
+
+%======================================================
+\newpage\underline{\textbf{Plus One}}
+%QUESTION SPECIFICS/IMAGES HERE
+Given an array representing the digits of a nonnegative integer, add 1 and return the resulting digits. Work directly with the array rather than converting the entire number to an integer.
+
+%EXAMPLES HERE
+\begin{console}
+Example 1: [1, 2, 3]
+Output: [1, 2, 4]
+
+Example 2: [9, 9]
+Output: [1, 0, 0]
+\end{console}
+
+
+%======================================================
+\newpage\underline{\textbf{Merge Sorted Arrays
+}}
+
+%QUESTION SPECIFICS/IMAGES HERE
+Given two sorted arrays, merge them into nums1 in sorted order. The first m elements of nums1 are actual values; its remaining n spaces are placeholders. nums2 contains n actual values.
+
+%EXAMPLES HERE
+\begin{console}
+Example 1: nums1 = [1, 2, 3, 0, 0, 0], m = 3, nums2 = [2, 5, 6], n = 3
+
+Output: nums1 = [1, 2, 2, 3, 5, 6]
+
+The placeholder zeros are ignored. Keep duplicate values.
+\end{console}
+
+
+%======================================================
+\newpage\underline{\textbf{Search Insert Position}}
+
+%QUESTION SPECIFICS/IMAGES HERE
+Given a sorted array of distinct integers and a target, return the target's index. If it is missing, return the index where it would be inserted. Indices start at 0. Use binary search.
+
+%EXAMPLES HERE
+\begin{console}
+Example 1: array = [1, 3, 5, 6], target = 5
+Output: 2
+
+Example 2: array = [1, 3, 5, 6], target = 2
+Output: 1
+
+Example 3: array = [1, 3, 5, 6], target = 7
+Output: 4
+\end{console}
+
+
+%======================================================
+\newpage\underline{\textbf{}}
+
+%QUESTION SPECIFICS/IMAGES HERE
+
+%EXAMPLES HERE
+\begin{console}
+\end{console}
+
+
+%======================================================
+\newpage\underline{\textbf{}}
+
+%QUESTION SPECIFICS/IMAGES HERE
+
+%EXAMPLES HERE
+\begin{console}
+\end{console}
+
+
+%======================================================
+\newpage\underline{\textbf{}}
+
+%QUESTION SPECIFICS/IMAGES HERE
+
+%EXAMPLES HERE
+\begin{console}
+\end{console}
+
+
+%======================================================
+\newpage\underline{\textbf{}}
+
+%QUESTION SPECIFICS/IMAGES HERE
+
+%EXAMPLES HERE
+\begin{console}
+\end{console}
+
+
+%======================================================
+\newpage\underline{\textbf{}}
+
+%QUESTION SPECIFICS/IMAGES HERE
+
+%EXAMPLES HERE
+\begin{console}
+\end{console}
+

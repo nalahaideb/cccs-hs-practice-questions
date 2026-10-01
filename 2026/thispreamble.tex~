@@ -1,0 +1,21 @@
+%-*-latex-*-
+\textwidth=8in
+%% \renewcommand{\familydefault}{\sfdefault}
+\documentclass[a4paper]{letter}
+\input{thispackages}
+\input{thismacros}
+\begin{document}
+\includegraphics[scale=0.15]{images/CCCS_Logo_Black.png}\\\\\\
+
+\textsc{\textlg{\underline{Columbia College Computer Science High school practice questions}}}\\\\\\
+
+
+\hyperref{}{CCCS High school programming contest website}
+
+
+\textlg{\textbf{ACTUAL EVENT IS MARCH $4^{th}$, 2026}}
+
+
+We hope to see you there!!
+
+\newpage
