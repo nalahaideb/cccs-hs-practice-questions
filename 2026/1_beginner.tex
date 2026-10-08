@@ -1,11 +1,69 @@
-\newsection{Beginner}
+\newpage
+\section{Beginner}
 
-\underline{\textlg{\textbf{Questions are continued on the next page}}}
 \newpage
 \begin{enumerate}
-%======================================================
-\item \textbf{Time Difference}
 
+%======================================================
+\item 
+%QUESTION SPECIFICS/IMAGES HERE
+Given an integer with at most 5 digits, print the digits.
+%EXAMPLES HERE
+\begin{consolethree}
+Example 1:
+Input: 13524
+Output: 1 3 5 2 4
+
+Example 2:
+Input: 42
+Output: 0 0 0 4 2
+\end{consolethree}
+(If \verb!x! is an integer variable, print \verb!x % 10! and
+\verb!x / 10!.
+Then print \verb!x % 100! and
+\verb!x / 100!.
+Then print \verb!x % 1000! and
+\verb!x / 1000!.)
+\newpage
+
+%======================================================
+\item 
+%QUESTION SPECIFICS/IMAGES HERE
+Given an integer $x$ print the number of digits of $x$.
+%EXAMPLES HERE
+\begin{consolethree}
+Example 1:
+Input: 13524
+Output: 5
+
+Example 2:
+Input: 8
+Output: 1
+\end{consolethree}
+\newpage
+
+%======================================================
+\item 
+%QUESTION SPECIFICS/IMAGES HERE
+Given an integer, print 1 if the integer is a palindrome.
+Otherwise print 0.
+An integer is a palindrome if it's the same if read backwards.
+1, 134431 and 13531 are palindromes.
+135731 is not a palindrome.
+%EXAMPLES HERE
+\begin{consolethree}
+Example 1:
+Input: 134431
+Output: 1
+
+Example 2:
+Input: 135731
+Output: 0
+\end{consolethree}
+\newpage
+
+%======================================================
+\item 
 %QUESTION SPECIFICS/IMAGES HERE
 Given two times in HHMMSS format, print the time between them as HH:MM:SS. Assume both times are on the same day and the second is not earlier than the first.
 %EXAMPLES HERE
@@ -21,15 +79,13 @@ Output: 01:14:25
 \newpage
 
 %======================================================
-\item \textbf{Print the calendar}
-
+\item 
 %QUESTION SPECIFICS/IMAGES HERE
 Given a month, year, and weekday of the first day, print that month's calendar. Weekdays are numbered 0 (Sunday) through 6 (Saturday). Account for leap years.
 %EXAMPLES HERE
 \begin{consolethree}
 Example 1:
 Input: month = 3, year = 2008, firstWeekday = 6
-
 Output:
 March 2008
 Su  Mo  Tu  We  Th  Fr  Sa
@@ -44,20 +100,17 @@ Su  Mo  Tu  We  Th  Fr  Sa
 
 
 %======================================================
-\item \textbf{Check a Map Position}
-
+\item 
 %QUESTION SPECIFICS/IMAGES HERE
 Given a row $r$ and column $c$, print 1 if the position is open and 0 if it is blocked or outside the map.
-
 Rows are numbered 0–7 and columns 0–9.
-
 The blocked areas are:
 	Rows 1–2, columns 2–8.
 	Rows 5–6, columns 4–7.
 
-
+\begin{center}
 \includegraphics[scale=0.45]{images/rowcol.png}
-
+\end{center}
 
 %EXAMPLES HERE
 \begin{consolethree}
@@ -74,8 +127,7 @@ Output: 0
 
 
 %======================================================
-\item \textbf{Print a V}
-
+\item 
 %QUESTION SPECIFICS/IMAGES HERE
 Given a positive integer n, print a V made of stars with n rows.
 
@@ -103,13 +155,11 @@ Output:
 
 
 %======================================================
-\item \textbf{Magic Squares}
-
+\item 
 %QUESTION SPECIFICS/IMAGES HERE
-Print all 3-by-3 arrangements of the digits 1–9 where every row, column, and both diagonals add to 15. Use each digit exactly once. There is no input.
-
+Print all 3-by-3 magic squares, i.e.,
+arrangements of the digits 1–9 where every row, column, and both diagonals add to 15. Use each digit exactly once. There is no input.
 Your program should find all 8 arrangements. Rotations and reflections count as different arrangements.
-
 The first two magic squares are shown below:
 %EXAMPLES HERE
 \begin{consolethree}
@@ -126,17 +176,17 @@ Example 1:
 
 
 %======================================================
-\item \textbf{Prime Search and Factorization}
-
+\item 
 %QUESTION SPECIFICS/IMAGES HERE
 Compute and store the first 100,000 primes in an array. Print the first 5 and last 5.
-
-Then repeatedly read a number x and an option:
-Option 0: Use binary search to check whether x is prime. If it is, print its array index, starting at 0.
+Then repeatedly read a number $x$ and an option:
+Option 0: Use binary search to check whether $x$ is prime.
+If it is, print its array index, starting at 0.
 Option 1: Print x as a product of prime factors.
-Stop when x is -1.
+Stop when $x$ is $-1$.
 
-Assume x is at least 2 and any prime needed is in your array. For option 0, x will not exceed the largest stored prime.
+Assume $x$ is at least 2 and any prime needed is in your array.
+For option $0$, $x$ will not exceed the largest stored prime.
 
 %EXAMPLES HERE
 \begin{consolethree}
@@ -157,10 +207,12 @@ Output: 2^2 * 3 * 5
 
 
 %======================================================
-\item \textbf{Sums of Two Cubes}
-
+\item 
 %QUESTION SPECIFICS/IMAGES HERE
-Given a positive integer n, print all positive integers x, y, and z where x³ + y³ = z and z is at most n. Print each solution as x y z, ordered by z and then x. Include reversed pairs.
+Given a positive integer $n$, print all positive integers $x, y$, and $z$ where
+$x^3 + y^3 = z$ and $z$ is at most $n$.
+Print each solution as $x\ y\ z$, ordered by $z$ and then $x$.
+Include reversed pairs.
 
 %EXAMPLES HERE
 \begin{consolethree}
@@ -179,8 +231,7 @@ Explanation: 1 2 9 means 1^3 + 2^3 = 9.
 
 
 %======================================================
-\item \textbf{Add Fractions}
-
+\item 
 %QUESTION SPECIFICS/IMAGES HERE
 Given four integers $a, b, c$, and $d$, where $a / b$ and $c / d$
 are viewed as fractions, print the sum of these two fractions.
@@ -206,8 +257,7 @@ Output: 0
 
 
 %======================================================
-\item \textbf{Add Digits}
-
+\item
 %QUESTION SPECIFICS/IMAGES HERE
 Given a nonnegative integer, repeatedly add its digits until only one digit remains.
 
@@ -227,9 +277,8 @@ Output: 0
 
 
 %======================================================
-\item \textbf{Plus One}
+\item
 %QUESTION SPECIFICS/IMAGES HERE
-
 Given an array representing the digits of a nonnegative integer, add 1 and return the resulting digits. Work directly with the array rather than converting the entire number to an integer.
 
 %EXAMPLES HERE
@@ -247,10 +296,12 @@ Output: [1, 0, 0]
 
 
 %======================================================
-\item \textbf{Merge Sorted Arrays}
-
+\item
 %QUESTION SPECIFICS/IMAGES HERE
-Given two sorted arrays, merge them into nums1 in sorted order. The first m elements of nums1 are actual values; its remaining n spaces are placeholders. nums2 contains n actual values.
+Given two sorted arrays, merge them into \verb!nums1! in sorted order.
+The first m elements of \verb!nums1! are actual values;
+its remaining \verb!n! spaces are placeholders.
+\verb!nums2! contains \verb!n! actual values.
 
 %EXAMPLES HERE
 \begin{consolethree}
@@ -258,8 +309,7 @@ Example 1:
 Input: nums1 = [1, 2, 3, 0, 0, 0]
        nums2 = [2, 5, 6]
        n = 3
-       m = 3
-		   
+       m = 3		   
 Output: nums1 = [1, 2, 2, 3, 5, 6]
 
 The placeholder zeros are ignored. Keep duplicate values.
@@ -269,29 +319,32 @@ The placeholder zeros are ignored. Keep duplicate values.
 
 
 %======================================================
-\item \textbf{Search Insert Position}
-
+\item
+%\textbf{Search Insert Position}
 %QUESTION SPECIFICS/IMAGES HERE
 Given a sorted array of distinct integers and a target, return the target's index. If it is missing, return the index where it would be inserted. Indices start at 0. Use binary search.
 
 %EXAMPLES HERE
 \begin{consolethree}
-Example 1: [1, 3, 5, 6], target = 5
-Output:    2
+Example 1:
+Input: [1, 3, 5, 6], target = 5
+Output: 2
 
-Example 2: [1, 3, 5, 6], target = 2
-Output:    1
+Example 2:
+Input: [1, 3, 5, 6], target = 2
+Output: 1
 
-Example 3: [1, 3, 5, 6], target = 7
-Output:    4
+Example 3:
+Input: [1, 3, 5, 6], target = 7
+Output: 4
 \end{consolethree}
 \newpage
 
 
 
 %======================================================
-\item \textbf{Zigzag Conversion}
-
+\item
+%\textbf{Zigzag Conversion}
 %QUESTION SPECIFICS/IMAGES HERE
 Given a string and a number of rows, place characters into rows by moving down, then up, repeatedly. Return the characters read one row at a time from top to bottom.
 For 3 rows, characters go into rows 0, 1, 2, 1, 0, 1, 2, and so on.
@@ -300,7 +353,7 @@ If there is only one row, return the original string.
 %EXAMPLES HERE
 \begin{consolethree}
 Example1:
-Input:  "PAYPALISHIRING", rows = 3
+Input: "PAYPALISHIRING", rows = 3
 Output: "PAHNAPLSIIGYIR"
 Explanation:
 Row 0: PAHN
@@ -312,11 +365,10 @@ Row 2: YIR
 
 
 %======================================================
-\item \textbf{Ugly Number}
-
+\item
+%\textbf{Ugly Number}
 %QUESTION SPECIFICS/IMAGES HERE
-Given an integer, return true if it is positive and its only prime factors are 2, 3, and 5. Otherwise, return false. The number 1 also counts as ugly.
-
+Given an integer, return true if it is an ugly number, i.e., if it is positive and its only prime factors are 2, 3, and 5. Otherwise, return false. The number 1 also counts as ugly.
 
 %EXAMPLES HERE
 \begin{consolethree}
@@ -335,8 +387,8 @@ Explanation: 14 has a prime factor of 7.
 
 
 %======================================================
-\item \textbf{Two Sum}
-
+\item
+%\textbf{Two Sum}
 %QUESTION SPECIFICS/IMAGES HERE
 Given an integer array and a target, return the indices of two elements that add to the target. Indices start at 0. There is exactly one valid pair, and you cannot use the same element twice.
 
@@ -355,10 +407,10 @@ Output: [0, 1]
 
 
 %======================================================
-\item \textbf{Integer Square Root}
-
+\item
+%\textbf{Integer Square Root}
 %QUESTION SPECIFICS/IMAGES HERE
-Given a nonnegative integer x, return its square root rounded down. Do not use built-in square-root or exponent functions.
+Given a nonnegative integer $x$, return its square root rounded down. Do not use built-in square-root or exponent functions.
 
 %EXAMPLES HERE
 \begin{consolethree}
@@ -369,7 +421,6 @@ Output: 2
 Example 2:
 Input: 8
 Output: 2
-
 Explanation: 2 * 2 is at most 8, but 3 * 3 is greater than 8.
 \end{consolethree}
 \newpage
@@ -377,10 +428,9 @@ Explanation: 2 * 2 is at most 8, but 3 * 3 is greater than 8.
 
 
 %======================================================
-\item \textbf{Longest Common Prefix}
-
+\item %\textbf{Longest Common Prefix}
 %QUESTION SPECIFICS/IMAGES HERE
-Given an array of strings, return the longest beginning shared by every string. Return "" if there is no shared beginning.
+Given an array of strings, return the longest beginning shared by every string. Return \verb!""! if there is no shared beginning.
 
 %EXAMPLES HERE
 \begin{consolethree}
@@ -397,15 +447,18 @@ Output: ""
 
 
 %======================================================
-\item \textbf{Rotated Digits}
-
+\item
+%\textbf{Rotated Digits}
 %QUESTION SPECIFICS/IMAGES HERE
-Given a positive integer n, count the numbers from 1 through n that become different valid numbers when every digit is replaced using these rules:
-0, 1, and 8 stay unchanged.
-2 becomes 5, and 5 becomes 2.
-6 becomes 9, and 9 becomes 6.
-3, 4, and 7 make the number invalid.
-Keep the digits in the same positions. Count a number only if all digits are valid and at least one changes.
+Given a positive integer $n$, count the numbers from $1$ through $n$
+that become different valid numbers when every digit is replaced using these rules:
+\begin{enumerate}
+\li  0, 1, and 8 stay unchanged.
+\li 2 becomes 5, and 5 becomes 2.
+\li 6 becomes 9, and 9 becomes 6.
+\li 3, 4, and 7 make the number invalid.
+\li Keep the digits in the same positions. Count a number only if all digits are valid and at least one changes.
+\end{enumerate}
 
 %EXAMPLES HERE
 \begin{consolethree}
