@@ -10,6 +10,20 @@
 \textwidth=6in % of 6in
 
 \input{thispackages}
+
+
+% 1. Set the PDF border (underline) to blue
+\hypersetup{
+    colorlinks=false,          % Must be false to allow the underline border
+    pdfborderstyle={/S/U/W 1}, % Solid underline of width 1pt
+    urlbordercolor=blue,       % Blue underline for external links
+    linkbordercolor=blue,      % Blue underline for internal links
+}
+
+% 2. Correctly redefine \href with exactly 2 parameters
+\let\oldhref\href
+\renewcommand{\href}[2]{\oldhref{#1}{\textcolor{blue}{#2}}}
+
 \input{thismacros}
 
 \makeindex
